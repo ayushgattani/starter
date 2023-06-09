@@ -84,13 +84,7 @@ const Comments = ({ post }) => {
                     onClick={(e) => addComment(e)}
                 >Post</Button>             
             </Container>
-            <Box>
-                {
-                    comments && comments.length > 0 && comments.map(comment => (
-                        <Comment comment={comment} setToggle={setToggle} />
-                    ))
-                }
-            </Box>
+            
         </Box>
     )
 }
